@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class AutoPracticeEtalon {
+public class AutoPracticeEtalon extends TestBase {
 
     @BeforeAll
     static void configure() {
