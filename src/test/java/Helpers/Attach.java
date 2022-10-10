@@ -33,7 +33,7 @@ public class Attach {
         attachAsText(
                 "Browser console logs",
                 String.join("\n", Selenide.getWebDriverLogs(BROWSER))
-        )
+        );
     }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
@@ -51,7 +51,7 @@ public class Attach {
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        return null
+        return null;
     }
 
     public static String getSessionId() {
