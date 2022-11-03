@@ -10,6 +10,8 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.URL;
 
+import static com.codeborne.selenide.Configuration.remote;
+
 public class TestBase {
 
     @BeforeAll
@@ -25,7 +27,11 @@ public class TestBase {
         Configuration.browserCapabilities = capabilities;
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        if (remote != null) {
+            remote = remote;
+        }
+
     }
 
     @AfterEach
