@@ -17,7 +17,6 @@ public class Attach {
     @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
-
     }
     @Attachment(value = "Page sourse", type = "\"text/plain")
     public static byte[] pageSourse() {
@@ -45,7 +44,6 @@ public class Attach {
 
     public static URL getVideoUrl() {
         String videoUrl = "https://selenoid.autotests.cloud/video/" + getSessionId() + ".mp4";
-
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {

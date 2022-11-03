@@ -1,0 +1,16 @@
+{
+  "base": {
+    "project": "some project",
+    "environment": "spme env",
+    "comment": "some comment",
+    "reportLink": "",
+    "language": "ru",
+    "allureFolder": "build/allure-report/",
+    "enableChart": true
+  },
+  "telegram": {
+    "token": "5782561153:AAEoSn93Xnex4pKE2K-NYPZdbhBMCBCNd14",
+    "chat": "-1001671475189",
+    "replyTo": ""
+  }
+}
