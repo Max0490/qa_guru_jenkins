@@ -12,11 +12,6 @@ import static io.qameta.allure.Allure.step;
 
 public class AutoPracticeEtalon extends TestBase {
 
-    @BeforeAll
-    static void configure() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
-    }
 
     @Test
     void FillFormTests1() {
