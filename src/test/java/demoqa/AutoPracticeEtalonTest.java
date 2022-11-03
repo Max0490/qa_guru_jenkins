@@ -10,7 +10,6 @@ import static io.qameta.allure.Allure.step;
 
 public class AutoPracticeEtalonTest extends TestBase {
 
-
     @Test
     void FillFormTests1() {
         step("Opening test form", () -> {
